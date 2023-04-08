@@ -1,0 +1,68 @@
+<!-- This is the HTML document for the interactive quiz. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+  <!-- Stylesheets for the quiz application and the navigation bar. -->
+  <link rel="stylesheet" href="quizStyles.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <div id=navbar class="Navbar">
+		<a href="Homepage.html">
+            <img src="Soccerspotlogo.png" alt="Logo"></a>
+   		<div id="navlist">
+        <a href="shop.html">Products</a>
+        <a href="queryForm.html">Query Form</a>
+        <a href="siteMap.html">Site Map</a>
+        <a href="quiz.html">Interactive Quiz</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="team.html">Team</a>
+        <a href="rochanaExtra.html">Additional Info</a>
+    	</div>
+	</div><br><br><br>
+  
+  <div class="app">
+    <!-- Introduction to the quiz and its rules. -->
+    <div id="intro">
+      <h2>Quiz Rules</h2>
+      <ul>
+        <li>10 multiple choice questions. 10 marks for each correct answer.</li>
+        <li>4 options for each question, only one option is correct.</li>
+        <li>You can't go back to the previous qu</li>
+        <li>Time limit is 2 minutes.</li>
+      </ul>
+      <button id="startBtn">Start Quiz</button>
+    </div>
+    
+    <!-- The quiz container to display questions and answer choices. -->
+    <div id="quiz" style="display:none;">
+      <h2>Time Remaining: <span id="timer">2:00</span></h2>
+      <div id="questionContainer"></div>
+      <button id="nextBtn" style="display:none;">Next</button>
+    </div>
+    
+    <!-- The results page to show the score and time taken. -->
+    <div id="results" style="display:none;">
+      <h2>Total Score: <span id="score"></span></h2>
+      <h3>Time Taken: <span id="timeTaken"></span></h3>
+      <!-- Buttons to return to the homepage or try the quiz again. -->
+      <button id="homeBtn" onclick="location.href='Homepage.html'">To Home Page</button>
+      <button id="restartBtn">Try Again</button>
+    </div>
+  </div>
+
+  <!-- Page Editor Button -->
+  <div class="button-container">
+    <a href="jayathuPageEditor.html" class="page-editor-btn">Page Editor</a>
+  </div>
+  
+  <!-- Linking the quiz JavaScript file. -->
+  <script src="quizScript.js"></script>
+</body>
+</html>

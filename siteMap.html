@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map</title>
+
+    <link rel="stylesheet" href="sitemapStyles.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div id=navbar class="Navbar">
+        <a href="Homepage.html">
+            <img src="Soccerspotlogo.png" alt="Logo">
+        </a>
+       <div id="navlist">
+            <a href="shop.html">Products</a>
+            <a href="queryForm.html">Query Form</a>
+            <a href="siteMap.html">Site Map</a>
+            <a href="quiz.html">Interactive Quiz</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="team.html">Team</a>
+            <a href="rochanaExtra.html">Additional Info</a>
+       </div>
+    </div>
+
+
+    <!-- Header Image -->
+    <div class="headBg" id="scrollpointheader">
+        <a href="#svgDiagram">Site-Map</a>    
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+        <h3 id="svgtitle">SVG Diagram</h3>
+    </div>
+    
+
+    <svg id="svgDiagram" viewBox="60 0 1800 500">
+        <!-- viewBox = [box.x, box.y, box.width, box.height] -->
+        <!-- https://stackoverflow.com/questions/3120739/resizing-svg-in-html -->
+
+        <!-- diagram -->
+
+       
+        <g class="lines">
+        <!-- horizontal line -->
+        <line x1="219" y1="180" x2="1697" y2="180" />
+
+        <line x1="220" y1="180" x2="220" y2="303"/>
+        <line x1="465" y1="180" x2="465" y2="303"/>
+        <line x1="710" y1="180" x2="710" y2="303"/>
+
+        <!-- center line -->
+        <line x1="955" y1="110" x2="955" y2="303"/>
+
+        <line x1="1200" y1="180" x2="1200" y2="303"/>
+        <line x1="1450" y1="180" x2="1450" y2="303"/>
+        <line x1="1695" y1="180" x2="1695" y2="303"/>
+        </g>
+
+        <!-- Circles -->
+        <g id="groupId1">
+            <circle class="circle" cx="220" cy="375" r="70" />
+            <text x="220" y="375">Content</text>
+            <text x="220" y="405">Page</text>
+        </g>
+
+        <g id="groupId2">
+            <circle class="circle" cx="465" cy="375" r="70" />
+            <text x="465" y="375">Buy</text>
+            <text x="465" y="405">Page</text>
+        </g>
+
+        <g id="groupId3">
+            <circle class="circle" cx="710" cy="375" r="70" />
+            <text x="710" y="375">Query</text>
+            <text x="710" y="405">Form</text>
+        </g>
+
+        <g id="groupId4">
+            <circle class="circle" cx="955" cy="375" r="70" />
+            <text x="955" y="385">Quiz</text>
+        </g>
+
+        <g id="groupId5">
+            <circle class="circle" cx="1200" cy="375" r="70"/>
+            <text x="1200" y="375">Student</text>
+            <text x="1200" y="405">Details</text>
+        </g>
+
+        <g id="groupId6">
+            <circle class="circle" cx="1450" cy="375" r="70"/>
+            <text x="1450" y="385">Sitemap</text>
+        </g>
+
+        <g id="groupId7">
+            <circle class="circle" cx="1695" cy="375" r="70" />
+            <text x="1695" y="385">Gallery</text>
+        </g>
+
+        <!-- Home rectangle -->
+        <g id="groupId8">
+            <rect class="circle" x="860" y="30" rx="10" ry="10" height="80" width="200"/>
+            <text x="960" y="80">Home</text>
+        </g>
+
+    </svg>
+
+
+    <!-- Footer -->
+    <div class="footer">
+
+        <div id="footerRow">
+            <div class="footerpageEditbtn">
+                <a href="minolPageEditor.html">Page Editor</a>
+            </div>
+            <div class="rightcornbtn">
+                <div class="view">
+                    <a href="#scrollpointheader">Go Top</a>
+                </div>
+            </div>
+        </div>   
+    </div>
+    
+    <script src="sitemapScript.js"></script>
+
+</body>
+
+</html>

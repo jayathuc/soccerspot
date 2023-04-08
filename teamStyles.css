@@ -1,0 +1,89 @@
+/* This is the CSS file for the Student deatails. */
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  /* background-color: #7045c628; */
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+/* Student Container */
+.student-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+
+/* Individual Student */
+.student {
+  position: relative;
+  display: inline-block; 
+  width: 200px;
+  height: 200px; 
+  overflow: hidden;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+.student-img,
+.student-info {
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.student-info {
+  opacity: 0;
+}
+
+.student:hover .student-img {
+  opacity: 0;
+}
+
+.student:hover .student-info {
+  opacity: 1;
+}
+
+/* Page Editor Button */
+.button-container {
+  margin: 20px;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  margin: 20px; 
+}
+
+.page-editor-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #7045c6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.page-editor-btn:hover {
+  background-color: #5f2dc5;
+}

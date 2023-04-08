@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+
+    <link rel="stylesheet" href="galleryStyles.css">
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+
+<body id="body">
+
+    <!-- Navigation bar -->
+    <div id=navbar class="Navbar">
+        <a href="Homepage.html">
+            <img src="Soccerspotlogo.png" alt="Logo">
+        </a>
+        <div id="navlist">
+            <a href="shop.html">Products</a>
+            <a href="queryForm.html">Query Form</a>
+            <a href="siteMap.html">Site Map</a>
+            <a href="quiz.html">Interactive Quiz</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="team.html">Team</a>
+            <a href="rochanaExtra.html">Additional Info</a>
+       </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <!-- Text size buttons -->
+        <div class="buttons">
+            <button class="button active" onclick="fontchange(1)">   A   </button>
+            <button class="button" onclick="fontchange(1.1)"     >   A   </button>
+            <button class="button" onclick="fontchange(1.15)"    >   A   </button>
+        </div>
+
+        <!-- (bgColor, fontColor, desboxColor,boxbgColor,titleBox) -->
+        <div class="theme">
+            <button class="button"
+                onclick="changeColor('#ffffff', '#000000', '#d2c0fc','#c5adff','#9973f5')">DEFAULT</button>
+            <button class="button"
+                onclick="changeColor('#ffffff', '#000000', '#dbd9d9','#dbd9d9','#ffffff')">LIGHT</button>
+            <button class="button"
+                onclick="changeColor('#1f1f1f', '#ffffff', '#7a7979','#575757','#4f4f4f')">DARK</button>
+            <button class="button"
+                onclick="changeColor('#001e4d', 'black', '#e6f3ff','#dfebf7','#398ddb')">OCEAN</button>
+            <button class="button"
+                onclick="randomBgColor('#ffffff', '#000000', '#dbd9d9','#dbd9d9','#ffffff')">RANDOM</button>
+        </div>
+
+
+        <!-- title-->
+        <div class="title">
+            <h3 id="galleryTitle">Greatest football legends in the history of the game</h3>
+        </div>
+
+        <div class="gallery">
+
+            <!-- Img 1 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/pele.png" alt="pele">
+                <div class="box">
+                    <h4 class="box_title">Pelé</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/pele.png" alt="pele">
+                        <p class="content">The only athlete in history to win three FIFA World Cups is Pele.
+                            He burst onto the scene in the 1958 World Cup as a 17-year old and was crucial in his
+                            country's first World Cup victory.
+                            Pele was named the best performer at the 1970 World Cup, and two more titles came along
+                            in
+                            1962 and 1970.
+                            Not to mention that the 1970 World Cup champions are regarded as the top international
+                            football squad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Img 2 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/maradona.png" alt="maradona">
+                <div class="box">
+                    <h4 class="box_title">Diego Maradona</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/maradona.png" alt="maradona">
+                        <p class="content">The last time Argentina won the World Cup was in 1986,Maradona was
+                            the captain who guided his team to victory.
+                            Maradona was an example of a rebel, famous for his explosive temper but also revered
+                            by many for his extraordinary ability. He had the ability to outdribble opponents like
+                            a hot scalpel through butter. He could single out a teammate with an incredible pass
+                            that would confound defenses, and he could consistently create magical moments.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Img 3 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/messi.png" alt="messi">
+                <div class="box">
+                    <h4 class="box_title">Lionel Messi</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/messi.png" alt="messi">
+                        <p class="content">Numerous Argentine athletes have claimed to be "The Next Maradona."
+                            Ariel Ortega, Pablo Aimar, and many others are examples. None of them lived up to that
+                            title.
+                            It's arguable that Lionel Messi has eclipsed both the incumbent and the person.
+                            One of the most well-known athletes in the world, Messi is a recognized star on a
+                            worldwide scale.
+                            The rivalry between he and Cristiano Ronaldo has been compared to well-known sporting
+                            rivals.
+                            He is undoubtedly one of the best sports legends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Img 4 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/ronaldo.png" alt="ronaldo">
+                <div class="box">
+                    <h4 class="box_title">Cristiano Ronaldo</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/ronaldo.png" alt="ronaldo">
+                        <p class="content">Ronaldo became famous around the world because of his
+                            outstanding ability and, of course his records, have altered the
+                            football landscape.
+                            The Portuguese superstar began his professional career at Sporting Lisbon but rose to
+                            international
+                            prominence with Manchester United, where he went on to capture three Premier League
+                            championships
+                            and an FA Cup. With them, he won the 2007–2008 UEFA Champions League for the first time.
+                            He also won
+                            the first of his five Ballon D'Ors in 2008.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Img 5 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/cruyff.png" alt="cruyff">
+                <div class="box">
+                    <h4 class="box_title">Johan Cruyff</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/cruyff.png" alt="cruyff">
+                        <p class="content">Johan Cruyff is on this list even though the other players are known for
+                            their records
+                            because of the sheer impact he has had on the contemporary game.
+                            The Netherlands' ascent to football aristocracy was sparked by Cruyff, an Amsterdam
+                            native who was the
+                            sport's shining star. Cruyff was the deep-lying forward Rinus Michels used to create his
+                            totaalvoetball
+                            game, and he was responsible for the formation and plan.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Img 6 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/zidane.png" alt="zidane">
+                <div class="box">
+                    <h4 class="box_title">Zinedine Zidane</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/zidane.png" alt="zidane">
+                        <p class="content">Without a question, one of the greatest attacking midfielders in history
+                            has been Zinedine Zidane. After beginning his football career with the French team Cannes,
+                            Zidane transferred to Bordeaux in 1992. The Frenchman earned Ligue 1 Player of the Year in
+                            his final season with the Girondins.
+                            Following a strong showing for Bordeaux, Zidane received offers from major European teams.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Img 7 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/maldini.png" alt="maldini">
+                <div class="box">
+                    <h4 class="box_title">Paolo Maldini</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/maldini.png" alt="maldini">
+                        <p class="content">Paolo Maldini only owned one team. The 24-year tenure of the Italian defender
+                            in
+                            Serie A was spent with AC Milan. Maldini earned a total of 25 trophies while playing for
+                            Milan,
+                            including five UEFA Champions Leagues, seven Serie A championships, one Coppa Italia, five
+                            Supercoppa
+                            Italiana crowns, four European Super Cups, two Intercontinental Cups, and one FIFA Club
+                            World Cup.
+                            Due to his guidance and defensive prowess on the field, the Italian defender was well-liked
+                            by all.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Img 8 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/nazario.png" alt="nazario">
+                <div class="box">
+                    <h4 class="box_title">Ronaldo Nazario</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/nazario.png" alt="nazario">
+                        <p class="content">Even though some might contest his superiority to Pele, you simply cannot
+                            help but be amazed
+                            when you watch him perform. If not for injuries, The "Fenomeno" would have surpassed all
+                            goal-scoring marks,
+                            despite his talent and ability.
+                            He was regarded as one of history's most versatile attackers. He was able to score goals and
+                            help his colleagues
+                            by using his incredible dribbling and skills.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Img 9 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/robert.png" alt="robert">
+                <div class="box">
+                    <h4 class="box_title">Robert Lewandowski</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/robert.png" alt="robert">
+                        <p class="content">The ex-Borussia Dortmund player is the model for all modern attackers. He is
+                            a complete attacker, with a picture-perfect finishing touch, strong shots, dribbles, and
+                            amazing set-piece skills.
+                            The second-highest goal scorer for Bayern Munich and Poland overall is Robert Lewandowski.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Img 10 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/buffon.png" alt="buffon">
+                <div class="box">
+                    <h4 class="box_title">Gianluigi Buffon</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/buffon.png" alt="buffon">
+                        <p class="content">One of the all-time greatest goalkeepers in this competition would be
+                            Gianluigi Buffon.
+                            The legendary Italian spent six seasons at Parma, where he began his professional journey in
+                            1995. Buffon
+                            earned one Coppa Italia and one UEFA Euro Cup during his six-year stay with the Crusaders.
+                            Buffon flourished and found the majority of his professional success with Juventus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Img 11 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/henry.png" alt="henry">
+                <div class="box">
+                    <h4 class="box_title">Thierry Henry</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/henry.png" alt="henry">
+                        <p class="content">The greatest athlete to ever compete in the Premier League is still Thierry
+                            Henry.
+                            The Arsenal striker was unstoppable in his heyday and a defensive nightmare because of his
+                            lightning-quick speed and agility.
+                            The Frenchman, who is regarded as one of the all-time greatest goal scorers, scored more
+                            goals for
+                            his country than any other player in the annals of French football.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Img 12 -->
+            <div class="gallery-item">
+                <img src="playersForGallery/romario.png" alt="romario">
+                <div class="box">
+                    <h4 class="box_title">Romario</h4>
+                    <div class="dropdown-content">
+                        <img class="dropimage" src="playersForGallery/romario.png" alt="romario">
+                        <p class="content">Romario enjoyed a distinguished career. He has scored the second-most goals
+                            in history.
+                            He joined the Johan Cruyff dream squad because of his dribbling, ability to maneuver in
+                            tight spaces
+                            in the penalty area, and finishing.
+                            Despite the numerous controversies that dogged his tenure, it was clear that the fans
+                            enjoyed his game.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+
+        <div id="footerRow">
+            <div class="footerpageEditbtn">
+                <a href="minolPageEditor.html">Page Editor</a>
+            </div>
+            <div class="rightcornbtn">
+                <div class="view">
+                    <a href="#body">Go Top</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="galleryScript.js"></script>
+
+</body>
+
+</html>
+
+<!-- https://www.youtube.com/watch?v=6j5q-hP8sfk -->
+<!-- https://www.w3schools.com/css/css_dropdowns.asp -->

@@ -1,0 +1,129 @@
+/* This is the CSS file for the {name} page editor. */
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-color: #bffb9d;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #B6C6AD;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+header p {
+    margin: 12px;
+    font-size: 20px;
+}
+
+.My-image {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+/* Tasks section styles */
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks li {
+    margin-bottom: 10px;
+}
+
+.tasks a {
+    text-decoration: none;
+    color: #333;
+    background-color: #82e5ab;
+    border: 1px solid #3d29d4;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tasks a:hover {
+    background-color: #2cdd76;
+}
+/* Back to home Button */
+.button-container {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    margin: 20px;
+  }
+  
+  .Home-page-btn {
+    text-decoration: none;
+    background-color: #7045c6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .Home-page-btn:hover {
+    background-color: #5f2dc5;
+  }
+
+/* Tasks table section styles */
+.tasks-table {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tasks-table table {
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 1px solid #7045c6;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #45c6569f;
+    font-weight: bold;
+}
+td{
+    text-align: center;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+
+

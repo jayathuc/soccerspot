@@ -1,0 +1,115 @@
+/* This is the CSS file for the {Name} extra content page. */
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+/* Font styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #333;
+    padding: 5px;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'nav'
+        'main';
+    grid-gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header section */
+h1 {
+    grid-area: header;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table of content */
+nav {
+    grid-area: nav;
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: #7045c628;
+    border-radius: 10px;
+}
+
+
+nav ol li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #5f2dc5;
+}
+
+/* Main content */
+main {
+    grid-area: main;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+/* Back to home Button */
+.button-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 7% 0 5% 5%;
+  }
+  
+  .to-top-btn {
+    text-decoration: none;
+    background-color: #7045c6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .Home-page-btn:hover {
+    background-color: #5f2dc5;
+  }
+  
+/*------------------------------Page Editor and Link reference-----------------------*/
+#credits{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #383aa5;
+    font-size: 12pt;
+    text-decoration: none;
+    width: 100%;
+    padding: 3% 0 2% 15%;
+    background-color: #7045c628;
+}

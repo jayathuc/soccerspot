@@ -1,0 +1,232 @@
+<!-- This is the HTML document for the jayathu page editor. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganidu's Tasks</title>
+<style>   
+    /* This is the CSS file for the {name} page editor. */
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-color: #aef983;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #B6C6AD;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+header p {
+    margin: 12px;
+    font-size: 20px;
+}
+
+.ganidu-image {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+/* Tasks section styles */
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks li {
+    margin-bottom: 10px;
+}
+
+.tasks a {
+    text-decoration: none;
+    color: #333;
+    background-color: #82e5ab;
+    border: 1px solid #3d29d4;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tasks a:hover {
+    background-color: #2cdd76;
+}
+/* Back to home Button */
+.button-container {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    margin: 20px;
+  }
+  
+  .Home-page-btn {
+    text-decoration: none;
+    background-color: #7045c6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .Home-page-btn:hover {
+    background-color: #5f2dc5;
+  }
+
+/* Tasks table section styles */
+.tasks-table {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tasks-table table {
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 2px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #1fe83a9f;
+    font-weight: bold;
+}
+td{
+    text-align: center;
+}
+
+.correct {
+    color: rgb(2, 180, 2);
+}
+
+.incorrect {
+    color: red;
+}
+</style> 
+
+
+
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- <img src="{name}.{type}" alt="{name} Image" class="name-image"> -->
+        <!-- Example  -->
+        <img src="Ganidu.jpeg" alt="Ganidu Image" class="ganidu-image">
+        <h1>E.M.G.C Sathmina</h1>
+        <p>UoW ID: w1953843</p>
+        <p>Student ID: 20221165</p>
+        <p>Role : Student 1</p>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Tasks completed section -->
+        <section class="tasks">
+            <h2>Tasks Completed</h2>
+            <ul>
+                <li><a href="task1.html">Presentation Page</a></li>
+                <p>Created a presentage page with CSS</p>
+                <li><a href="task2.html">Shop page</a></li>
+                <p>Created a shop page with CSS & java script. <br>Paragraph 2 </p>
+                <li><a href="task3.html">The Most Incredible Football Come Backs in History</a></li>
+                <p>Created a web page to educate the user about the most incredible football come back in histroy.</p>
+                <li><a href="namePageEditor.html">Page Editor </a></li>
+                <p>Created the Page editor Page Listing all the main tasks completed.</p>
+            </ul>
+
+            <!-- use of a single method to showcase the tasks is enough. use the method above or table below 
+            <td class="correct">&#10004;</td> for Check mark
+            <td class="incorrect">&#10008;</td> for Cross mark -->
+
+            <!-- Tasks table section -->
+            <h2>Tasks and Status</h2>
+                <section class="tasks-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="quiz.html">Main task 1</a></td>
+                                <td class="correct">&#10004;</td>
+                            </tr>
+                            <tr>
+                                <td><a href="student-details.html">Main task 2</a></td>
+                                <td class="correct">&#10004;</td>
+                            </tr>
+                            <tr>
+                                <td><a href="extra-content.html">Extra Content Page</a></td>
+                                <td class="correct">&#10004;</td>
+                            </tr>
+                            <tr>
+                                <td><a href="namePageEditor.html">Page Editor Page</a></td>
+                                <td class="correct">&#10004;</td>
+                            </tr>
+                            <!-- <tr>
+                                <td>bla bla</td>
+                                <td class="correct">&#10004;</td>
+                            </tr> -->
+                            <tr>
+                                <td>Additional CSS</td>
+                                <td class="correct">&#10004;</td>
+                            </tr>
+                            <!-- <tr>
+                                <td>bla bla</td>
+                                <td class="incorrect">&#10008;</td>
+                            </tr> -->
+                            <tr>
+                                <td>Web Page Validated</td>
+                                <td class="correct">&#10004;</td>
+                            </tr>
+                            <tr>
+                                <td>Report</td>
+                                <td class="correct">&#10004;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+        </section>
+    </main>
+    <!-- Back to home Button -->
+    <div class="button-container">
+        <a href="Homepage.html" class="Home-page-btn">Back to home</a>
+    </div>
+    
+</body>
+</html>

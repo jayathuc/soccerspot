@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*------------------------------------------------------*/
+
+
+#galleryTitle{
+    color: #4d4b4b; 
+    font-size: 30pt; 
+    font-weight: bold; 
+    text-transform: uppercase;  
+    text-align: center;  
+}
+
+.title{
+    display: flex;
+    justify-content: center; 
+    margin-top: 5%;  
+}
+
+
+/*------------------------------------------------------*/
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    grid-gap: 2em;
+    padding: 5em;
+    background: #7978782a;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+.gallery-item {
+    background: #c5adff;
+    border: 1px solid #000000;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+}
+
+.box {
+    margin-top: 0%;
+    padding-bottom: 0%;
+
+}
+
+.box_title {
+
+    font-size: 18;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    padding: 5%;
+    background: #9973f5;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.content {
+    top: 20%;
+    padding: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropimage {
+    float: right;
+    width: 40%;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    margin: -6%;
+    margin-left: -4%;
+    top: 25%;
+    width: 22em;
+    height: auto fit-content;
+    background: #d2c0fc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+}
+
+div.gallery-item:hover .dropdown-content {
+    display: block;
+}
+
+div.gallery-item:hover {
+    border: 1px solid #ad0404;
+    box-shadow: 0px 8px 16px 0px rgba(207, 8, 8, 0.452);
+    transition: .5s;
+}
+
+/*Buttons*/
+
+/*Font size buttons*/
+.container {
+    padding: 5rem 5rem;
+    position: relative;
+}
+
+.container .buttons {
+    width: 100%;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.container .buttons .button {
+    padding: 1px 10px;
+    margin-left: 10px;
+    margin-top: 8%;
+    display: inline-block;
+    background: rgb(184, 181, 181);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.container .buttons .button:nth-child(2) {
+    font-size: 25px;
+}
+
+.container .buttons .button:nth-child(3) {
+    font-size: 30px;
+}
+
+.container .buttons .active {
+    background:  #6f3fcf;
+}
+
+/*----------------------------------------------------*/
+
+/*Theme buttons*/
+
+.container .theme {
+    width: 100%;
+    position: absolute;
+    left: 70px;
+    top: 110px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container .theme .button {
+    padding: 3px 10px;
+    margin-left: 10px;
+    display: inline-block;
+    background: rgb(184, 181, 181);
+    color: white;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 15px;
+    border: 1px solid #000000;
+}
+
+
+.container .theme .button:nth-child(1) {
+    background: rgb(162, 134, 240);
+}
+
+.container .theme .button:nth-child(2) {
+    background: rgb(179, 179, 179);
+}
+
+.container .theme .button:nth-child(3) {
+    background: rgb(37, 37, 37);
+}
+
+.container .theme .button:nth-child(4) {
+    background: #3f5a85;
+}
+
+.container .theme .button:nth-child(5) {
+    background: rgb(111, 63, 207);
+}
+
+.container .theme .button:hover {
+    border: 1px solid #c9b0b0;
+    box-shadow: 0px 3px 5px 0px rgba(196, 186, 186, 0.452);
+}
+
+/*--------------------------Footer--------------------------*/
+
+.footer{
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5adff;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+
+#footerRow{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 95%;
+}
+
+/*button position*/
+.footerpageEditbtn{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    text-align:center;
+}
+
+.footerpageEditbtn a{
+    text-decoration: none;
+    padding:12px;
+    border:none;
+    background-color: #5f2dc5;
+    color:white;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*button position*/
+.rightcornbtn{
+    margin-top: 2%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.view{
+    text-align:center;
+    padding:8px;
+    margin-top: 5%;
+}
+
+.view a{
+    text-decoration: none;
+    padding:12px;
+    border:none;
+    background-color: #5f2dc5;
+    color:white;
+    width: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,108 @@
+/* This is the CSS file for the interactive quiz. */
+
+/* Basic styling for the body of the page. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7045c628;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the main container for the quiz */
+.app{
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 60px auto 0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Style headings in the quiz. */
+h2, h3 {
+  text-align: center;
+}
+
+/* Style containers for quiz elements. */
+#intro, #quiz, #results {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style buttons used in the quiz. */
+button {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #222;
+  padding: 10px;
+  margin: 4px 0;
+  text-align: left;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #646464;
+  color: #fff;
+}
+
+button:focus{
+  background: #222;
+  color: #fff;
+}
+
+/* Style the start,next,home and restart buttons used in the quiz. */
+#startBtn, #nextBtn,#homeBtn,#restartBtn{
+  background-color:  #7045c6;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  width: 120px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#startBtn:hover,
+#homeBtn:hover,
+#nextBtn:hover,
+#restartBtn:hover {
+  background-color: #5f2dc5;
+}
+
+/* Style the home and restart buttons used in the quiz. */
+#homeBtn,#restartBtn{
+  display: flex;
+  justify-content: center;
+}
+
+/* Page Editor Button */
+.button-container {
+  margin: 20px;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  margin: 20px; 
+}
+
+.page-editor-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #7045c6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.page-editor-btn:hover {
+  background-color: #5f2dc5;
+}
+
+
+
