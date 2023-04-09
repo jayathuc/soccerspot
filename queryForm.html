@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Query</title>
+	<link rel="stylesheet" href="queryform.css">
+</head>
+
+<body>
+    <div id=navbar class="Navbar">
+		<a href="./home">
+            <img src="Soccerspotlogo.png" alt="Logo"></a>
+   <div id="navlist">
+		<li><a href="./shop">Products</a></li>
+		<li><a href="./queryForm">Query Form</a></li>
+		<li><a href="./siteMap">Site Map</a></li>
+		<li><a href="./quiz">Interactive Quiz</a></li>
+		<li><a href="./gallery">Gallery</a></li>
+		<li><a href="./team">Team</a></li>
+		<li><a href="./rochanaExtra">Additional Info</a></li>
+    </div>
+</div><br><br><br>
+
+
+<div class="container" id="container">
+    <form id="myForm" action="mailto:rochana.20221116@iit.ac.lk" method="post" >
+        <div class="left" style="background-color:rgb(111, 96, 208); ">
+		
+			  <p style="font-size:17px">Write us</p><br>
+			  
+			  <input id="name" type="text" name="name" placeholder="Name"><br><br><br>
+			  <input id="mail" type="email" name="mail" placeholder="E-Mail" ><br><br>
+			  
+			  <p style="font-family:verdana"><b>Select a subject</b></p><br>
+			  
+			  <input id="Delivery" type="radio" name="subject" value="Shipping and Delivery" checked>
+			  <label for="Delivery">Shipping and Delivery</label><br>	  
+			  <input id="Promotions" type="radio" name="subject" value="Promotions">
+			  <label for="Promotions">Promotions</label><br>	  
+			  <input id="CompInfo" type="radio" name="subject" value="Company Info">
+			  <label for="CompInfo">Company Info</label><br><br>
+			  
+			  <textarea style="resize:none; " id="query" name="query" placeholder="Enter your query here" cols="50" rows="7"></textarea><br><br><br>
+			  <input type="button" class="button" value="View query" onclick="check(myForm);">
+		  
+        </div>
+	</form>
+	<div class="right" style="background-color:#333232; " >
+		<img src="Soccerspotlogo.png" style=" width: 100%; " alt="logo"> 
+	</div>
+</div>	
+<div class="container-s">
+		<div id="summary">
+
+		 <img src="Soccerspotlogo.png" style="width:50%; height: 500px;" class="left" alt="logo"> 
+		 <div class="left">
+			<h2>Is this what you wanted to send?</h2>
+			 <p id="names"></p>
+			 <p id="mails"></p>
+			 <p id="subjects"></p>
+			 <p id="querys"></p><br>
+			 <input  type="button" value="Edit" class="button" onclick="edit()" style="margin-right:20px">
+			 <input  type="submit" value="Send" class="button" form="myForm" >
+		 </div>
+		 
+		</div>
+</div>
+<a href="./rochanaPageEditor" style="text-decoration: none;"><p style="margin-top:33%; color:#000000; font-family:verdana; text-decoration: none; text-align: center;">Page Editor</p></a>	
+
+<script>
+	  function check(myForm){
+	  let myName=myForm.name.value;
+	  let myMail=myForm.mail.value;
+	  let myQuery=myForm.query.value;
+	  let radioValue=getRadioValue(myForm.subject);
+					  
+					  
+	if(myName==""){
+		alert("Hey you didn't write your name!");
+						 
+	}else if(myMail==""){
+		alert("Hey you didn't write your E-mail!");
+						
+	}else if(myQuery==""){
+		alert("Hey you didn't write your query!");
+						
+	}else {
+						   
+		document.getElementById("container").style.display = "none";				  
+		document.getElementById("summary").style.display = "block";
+						  
+		document.getElementById("names").innerHTML = "Name: "+myName;
+		document.getElementById("mails").innerHTML = "E-mail: "+myMail;
+		document.getElementById("subjects").innerHTML = "Subject: "+radioValue;
+		document.getElementById("querys").innerHTML = "Query: "+myQuery;
+						  
+						  
+	}
+	}
+					  
+	function getRadioValue( RadioArray ){
+		for( let i=0; i<RadioArray.length; i++){
+			if( RadioArray[i].checked){
+				return RadioArray[i].value;
+			   }
+			}
+				return "";
+						
+			}
+	function edit(){
+		document.getElementById("summary").style.display = "none";
+		document.getElementById("container").style.display = "block";
+					   
+	}
+
+
+
+</script>
+</body>
+</html>
