@@ -36,7 +36,7 @@ addEventListener("click", function () {
 
 document.getElementById("groupId8").
 addEventListener("click", function () {
-    document.location.href = "Home.html";
+    document.location.href = "./home";
 });
 
 //Scalable Vector Graphics - SVG 
