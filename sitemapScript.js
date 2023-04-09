@@ -1,37 +1,37 @@
 //to redirect relative page 
 document.getElementById("groupId1").
 addEventListener("click", function () {
-    document.location.href = "rochanaExtra.html";
+    document.location.href = "./rochanaExtra";
 });
 
 document.getElementById("groupId2").
 addEventListener("click", function () {
-    document.location.href = "shop.html";
+    document.location.href = "./shop";
 });
 
 document.getElementById("groupId3").
 addEventListener("click", function () {
-    document.location.href = "queryForm.html";
+    document.location.href = "./queryForm";
 });
 
 document.getElementById("groupId4").
 addEventListener("click", function () {
-    document.location.href = "quiz.html";
+    document.location.href = "./quiz";
 });
 
 document.getElementById("groupId5").
 addEventListener("click", function () {
-    document.location.href = "team.html";
+    document.location.href = "./team";
 });
 
 document.getElementById("groupId6").
 addEventListener("click", function () {
-    document.location.href = "sitemap.html";
+    document.location.href = "./sitemap";
 });
 
 document.getElementById("groupId7").
 addEventListener("click", function () {
-    document.location.href = "gallery.html";
+    document.location.href = "./gallery";
 });
 
 document.getElementById("groupId8").
