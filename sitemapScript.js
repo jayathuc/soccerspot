@@ -26,7 +26,7 @@ addEventListener("click", function () {
 
 document.getElementById("groupId6").
 addEventListener("click", function () {
-    document.location.href = "./sitemap";
+    document.location.href = "./siteMap";
 });
 
 document.getElementById("groupId7").
